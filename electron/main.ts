@@ -4,14 +4,19 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
+// Set userData before app is ready to avoid cache permission errors on Windows
+// TMC_INSTANCE env var allows running multiple instances simultaneously (e.g. for testing)
+const instanceSuffix = process.env.TMC_INSTANCE ? `-${process.env.TMC_INSTANCE}` : ''
+app.setPath('userData', path.join(app.getPath('appData'), `tmc-messenger${instanceSuffix}`))
+
 let win: BrowserWindow | null = null
 
 function createWindow() {
   win = new BrowserWindow({
-    width: 620,
-    height: 500,
-    minWidth: 400,
-    minHeight: 380,
+    width: 820,
+    height: 560,
+    minWidth: 620,
+    minHeight: 420,
     frame: false,
     roundedCorners: false,
     resizable: true,

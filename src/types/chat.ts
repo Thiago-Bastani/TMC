@@ -1,18 +1,22 @@
 export interface Message {
-  id: string
-  sender: 'me' | 'them'
-  senderName: string
-  senderColor: string
-  text: string
-  timestamp: Date
+  id: number
+  sender_id: number
+  receiver_id: number
+  content: string | null
+  media_url: string | null
+  media_type: 'image' | 'audio' | 'gif' | null
+  created_at: string
+  sender?: {
+    id: number
+    username: string
+    prof_pic: string | null
+  }
 }
 
 export interface Contact {
-  id: string
-  displayName: string
-  personalMessage: string
-  avatarUrl: string | null
-  status: 'online' | 'away' | 'busy' | 'offline'
+  id: number
+  username: string
+  prof_pic: string | null
 }
 
 declare global {
