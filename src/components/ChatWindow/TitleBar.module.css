@@ -1,0 +1,65 @@
+.titleBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 22px;
+  background: linear-gradient(to right, #0063b1, #2d8ae0);
+  padding: 0 2px 0 4px;
+  flex-shrink: 0;
+  -webkit-app-region: drag;
+  user-select: none;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  overflow: hidden;
+}
+
+.logo {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 11px;
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  -webkit-app-region: no-drag;
+}
+
+.btn {
+  width: 16px;
+  height: 14px;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 9px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
+  border-radius: 1px;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.btnClose:hover {
+  background: #cc0000;
+}

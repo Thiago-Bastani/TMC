@@ -1,0 +1,25 @@
+.message {
+  margin-bottom: 8px;
+}
+
+.senderLine {
+  font-size: 9.5pt;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+.timestamp {
+  font-size: 7.5pt;
+  color: #999999;
+  font-weight: normal;
+  margin-right: 4px;
+}
+
+.text {
+  font-size: 10pt;
+  color: #000000;
+  font-weight: normal;
+  margin-left: 2px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}

@@ -1,0 +1,48 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  height: 26px;
+  padding: 0 4px;
+  background: #d6e4f7;
+  border-top: 1px solid #7aa3cc;
+  border-bottom: 1px solid #7aa3cc;
+  flex-shrink: 0;
+  gap: 2px;
+}
+
+.btn {
+  width: 22px;
+  height: 22px;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  font-size: 11px;
+  font-family: Tahoma, Arial, sans-serif;
+  font-weight: bold;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 1px;
+}
+
+.btn:hover {
+  background: #c0d8f0;
+  border-color: #7aa3cc;
+}
+
+.separator {
+  width: 1px;
+  height: 16px;
+  background: #99bbcc;
+  margin: 0 2px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
